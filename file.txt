@@ -1,0 +1,9 @@
+https://algoritmosempython.com.br/cursos/programacao-python/encapsulamento/
+
+
+https://ajuda.gitlab.io/guia-rapido/arquitetura/design-patterns/solid/liskov-substitution-principle/
+
+https://kinsta.com/pt/blog/programacao-orientada-objetos-python/
+
+https://realpython.com/python3-object-oriented-programming/
+
