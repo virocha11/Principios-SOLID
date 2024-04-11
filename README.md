@@ -1,20 +1,18 @@
 # Princípios de Projeto de Software
 <div>
-<h6>Documentação sobre a utilização dos Princípios de Projeto de Software, como o SOLID.</h6>
+<h3>Documentação sobre a utilização dos Princípios de Projeto de Software, como o SOLID.</h3>
 
 <b>Segue abaixo os 7 Princípios de Projeto de Software:</b>
 
--S — Single Responsiblity Principle (Princípio da responsabilidade única)
--O — Open-Closed Principle (Princípio Aberto-Fechado)
--L — Liskov Substitution Principle (Princípio da substituição de Liskov)
--I — Interface Segregation Principle (Princípio da Segregação da Interface)
--D — Dependency Inversion Principle (Princípio da inversão da dependência)
--Prefira Composição a Herança
--Demeter 
+- S -> Single Responsiblity Principle (Princípio da responsabilidade única)
+- O -> Open-Closed Principle (Princípio Aberto-Fechado)
+- L -> Liskov Substitution Principle (Princípio da substituição de Liskov)
+- I -> Interface Segregation Principle (Princípio da Segregação da Interface)
+- D -> Dependency Inversion Principle (Princípio da inversão da dependência)
+- Prefira Composição a Herança
+- Demeter 
 
-<br>
-
-Abordaremos 4 desses princípios para explicar a importância de sua utilização, sendo eles 
+<b>Abordaremos 4 desses princípios para explicar a importância de sua utilização, sendo eles</b> 
 
 1. Open-Closed Principle (Princípio Aberto-Fechado)
 2. Liskov Substitution Principle (Princípio da Substituição de Liskov)
