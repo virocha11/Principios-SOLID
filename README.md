@@ -20,6 +20,30 @@
 4. Prefira Composição a Herança
 </div>
 
+<div>
+<h4>Exemplo Open-Closed Principle</h4>
+[<br color:green>Ir para o código</br>] (/open_close.cpp)
+
+```cpp
+class FolhaDePagamento{
+    protected:
+    double saldo;
+
+    public:
+
+    void calcular(ContratoClt* contrato){
+        this->saldo = contrato->salario();  
+    }
+
+    void calcular(ContratoEstagio* contrato){
+        this->saldo = contrato->bolsaAuxilio();
+    }
+
+};
+```
+Observe que em ambos os métodos `calcular` da classe `FolhaDePagamento`, é preciso passar por parâmetro o tipo do contrato, o qual queremos realizar o cálculo do saldo, para então chamar o método correspondente à esse tipo, CLT ou Estágio. Esse tipo de código, além do forte acolamento da classe, não é extensível. Sendo que, caso queira acrescentar um novo tipo de contrato, será preciso <br>modificar</br> a classe `FolhaDePagamento`. Fato este que viola o príncipio de Aberto-Fechado, que diz que uma classe deve estar Aberta para Extensão e Fechada para Modificação. 
+</div>
+
 <!-- Enunciado
 2. Vocês deve commitar e documentar o código no seu repositório no GitHub. Utilize o Readme do projeto para linkar os códigos e documentar a explicação do exemplo.
 
