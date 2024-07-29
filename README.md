@@ -22,7 +22,7 @@
 
 <div>
 <h4>Exemplo Open-Closed Principle</h4>
-[<br color:green>Ir para o código</br>] (/open_close.cpp)
+[<br color:green>Ir para o código</br>] (https://github.com/virocha11/Principios-SOLID/blob/5de5f457835e676c55b6c07434726f113d68c2c4/open_close.cpp#L6-L43)
 
 ```cpp
 class FolhaDePagamento{
@@ -41,8 +41,15 @@ class FolhaDePagamento{
 
 };
 ```
-Observe que em ambos os métodos `calcular` da classe `FolhaDePagamento`, é preciso passar por parâmetro o tipo do contrato, o qual queremos realizar o cálculo do saldo, para então chamar o método correspondente à esse tipo, CLT ou Estágio. Esse tipo de código, além do forte acolamento da classe, não é extensível. Sendo que, caso queira acrescentar um novo tipo de contrato, será preciso <br>modificar</br> a classe `FolhaDePagamento`. Fato este que viola o príncipio de Aberto-Fechado, que diz que uma classe deve estar Aberta para Extensão e Fechada para Modificação. 
+Observe que em ambos os métodos `calcular` da classe `FolhaDePagamento`, é preciso passar por parâmetro o tipo do contrato, o qual queremos realizar o cálculo do saldo, para então chamar o método correspondente a esse tipo, CLT ou Estágio. Esse tipo de código, além do forte acolamento da classe, não é extensível. Sendo que, caso queira acrescentar um novo tipo de contrato, será preciso <b>modificar</b> a classe `FolhaDePagamento`. Fato este que viola o príncipio de Aberto-Fechado, que diz que uma classe deve estar Aberta para Extensão e Fechada para Modificação. 
+
+Nesse exemplo, para o código estar de acordo com o princípio Aberto-Fechado, precisaremos criar uma interface que tenha um método abstrato para calcular o tipo de remuneração para que as classes de contrato possam utilizá-lo da maneira que lhe for viável. 
+
+Observe o [código melhorado} ()
+
 </div>
+
+
 
 <!-- Enunciado
 2. Vocês deve commitar e documentar o código no seu repositório no GitHub. Utilize o Readme do projeto para linkar os códigos e documentar a explicação do exemplo.
